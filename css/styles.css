@@ -40,6 +40,7 @@ a {
 
 h1, h2, h3, h4 {
    font-family: var(--fontHeading);
+   line-height: 1.2;
 }
 
 h1 {
@@ -189,7 +190,40 @@ img {
    }
 }
 
-.boton__primario {
+.boton--primario {
    background-color: var(--black);
 }
 
+.boton---secundario {
+   background-color: var(--primary);
+}
+
+.cursos {
+   list-style: none;
+}
+
+.widget-curso {
+   border-bottom: 1px solid var(--light);
+   margin-bottom: 2rem;
+   padding-bottom: 2rem;
+}
+
+.widget-curso:last-of-type {
+   border-bottom: none;
+   margin-bottom: 0;
+   padding-bottom: 0;
+}
+
+.widget-curso__label {
+   font-family: var(--fontHeading);
+   font-weight: bold;
+}
+
+.widget-curso__info {
+   font-weight: normal;
+}
+
+.widget-curso__label,
+.widget-curso__info {
+   font-size: 2rem;
+}
