@@ -3,6 +3,7 @@
    --fontparagham: 'Open Sans', sans-serif;
 
    --primary: #784D3C;
+   --primaryLigth: #A16207;
    --white: #FFF;
    --black: #1F1B1C;
 }
@@ -22,7 +23,10 @@ body {
    line-height: 2;
 }
 
+
+/*? ====================== */
 /*! ===== Globales ===== */
+/*? ====================== */
 .contenedor {
    max-width: 120rem;
    width: 90%;
@@ -54,7 +58,10 @@ img {
    max-width: 100%;
 }
 
+
+/*? ====================== */
 /*! ===== Utilidades ===== */
+/*? ====================== */
 .no-margin {
    margin: 0;
 }
@@ -66,3 +73,76 @@ img {
 .centrar-texto {
    text-align: center;
 }
+
+
+/*? ====================== */
+/*! ===== Header ===== */
+/*? ====================== */
+.header {
+   height: 60rem;
+   background-image: url(../img/banner.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+}
+
+.header__texto {
+   text-align: center;
+   color: var(--white);
+   margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+   .header__texto {
+      margin-top: 15rem;
+   }
+}
+
+@media (min-width: 768px) {
+   .barra {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+}
+
+.logo {
+   color: var(--white);
+
+}
+.logo__nombre {
+   font-weight: 400;
+}
+.logo__bold {
+   font-weight: 700;
+}
+
+/* .navegacion {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+} */
+
+@media (min-width: 768px) {
+   .navegacion {
+      display: flex;
+      gap: 2rem;
+   }
+}
+
+.navegacion__enlace {
+   display: block;
+   text-align: center;
+   font-size: 1.8rem;
+   color: var(--white);
+}
+
+.navegacion__enlace:hover {
+   color: var(--primaryLigth);
+}
+
+
