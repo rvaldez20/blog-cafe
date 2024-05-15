@@ -3,10 +3,11 @@
    --fontparagham: 'Open Sans', sans-serif;
 
    --primary: #784D3C;
-   --primaryLigth: #A16207;
+   --primaryLigth: #b86e47;
+   /* --primaryLigth: #A16207; */
    --light: #cbd5e1;
    --white: #FFF;
-   --black: #1F1B1C;
+   --black: #000;
 }
 
 html {
@@ -240,5 +241,35 @@ img {
    background: var(--black);
    margin-top: 4rem;
    padding-bottom: 4rem;
+}
+
+/*? ====================== */
+/*! ===== Nosotros ===== */
+/*? ====================== */
+
+@media (min-width: 768px) {
+   .sobre-nosotros{
+      display: flex;
+      justify-content: space-between;
+      /* gap: 2rem; */
+   }
+
+   /* .sobre-nosotros__imagen {
+      flex: 0 0 calc(50% - 1rem);
+   }
+   .sobre-nosotros__texto  {
+      flex: 0 0 calc(50% - 1rem);
+   } */
+
+   .sobre-nosotros__imagen,
+   .sobre-nosotros__texto {
+      /* version corta usando flex-basis */
+      /* flex-basis: calc(50% - 1rem);   */
+
+      /* usando chorhand flex */
+      flex: 0 0 calc(50% - 1rem);
+   }
+
 
 }
+
